@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root-pane" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UrunController">
+   <children>
+      <Button fx:id="submit" layoutX="258.0" layoutY="200.0" mnemonicParsing="false" onAction="#submit" styleClass="custom-button" text="Submit" visible="false" />
+      <Button fx:id="add" layoutX="223.0" layoutY="134.0" mnemonicParsing="false" onAction="#addButton" prefHeight="26.0" prefWidth="150.0" styleClass="custom-button" text="Urun Ekle" />
+      <Button fx:id="remove" layoutX="225.0" layoutY="190.0" mnemonicParsing="false" onAction="#removeButton" prefHeight="26.0" prefWidth="150.0" styleClass="custom-button" text="Urun Kaldir" />
+      <Label fx:id="label" alignment="CENTER" layoutX="208.0" layoutY="119.0" prefHeight="18.0" prefWidth="181.0" />
+      <TextField fx:id="textField" layoutX="225.0" layoutY="152.0" visible="false" />
+      <Button fx:id="turnBack" layoutX="37.0" layoutY="30.0" mnemonicParsing="false" onAction="#turnBackButton" prefHeight="41.0" prefWidth="66.0" styleClass="custom-button" text="⬅" />
+   </children>
+</AnchorPane>

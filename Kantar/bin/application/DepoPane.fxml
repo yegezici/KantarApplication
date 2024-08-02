@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root-pane" stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DepoController">
+   <children>
+      <Button fx:id="submit" layoutX="257.0" layoutY="233.0" mnemonicParsing="false" onAction="#submit" styleClass="custom-button" text="Submit" visible="false" />
+      <Button fx:id="add" layoutX="201.0" layoutY="149.0" mnemonicParsing="false" onAction="#addButton" prefHeight="26.0" prefWidth="166.0" text="Depo Ekle" />
+      <Button fx:id="remove" layoutX="201.0" layoutY="199.0" mnemonicParsing="false" onAction="#removeButton" prefHeight="26.0" prefWidth="174.0" styleClass="custom-button" text="Depo kaldir" />
+      <TextField fx:id="textField" alignment="CENTER" layoutX="174.0" layoutY="175.0" prefHeight="26.0" prefWidth="218.0" visible="false" />
+      <Button fx:id="turnBack" layoutX="47.0" layoutY="40.0" mnemonicParsing="false" onAction="#turnBackButton" prefHeight="41.0" prefWidth="70.0" styleClass="custom-button" text="⬅" />
+      <Label fx:id="label" alignment="CENTER" layoutX="201.0" layoutY="142.0" prefHeight="18.0" prefWidth="174.0" styleClass="custom-button" text="Depo Ekle" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane stylesheets="@application.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPaneController">
+    <top>
+        <Label styleClass="title-text" stylesheets="@application.css" text="Kantar Yönetimi" BorderPane.alignment="CENTER" />
+    </top>
+   <right>
+        <GridPane alignment="CENTER" hgap="20.0" prefHeight="373.0" prefWidth="417.0" styleClass="root-pane" stylesheets="@application.css" vgap="20.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+            <Button onAction="#kantarPaneButton" styleClass="custom-button" stylesheets="@application.css" text="Kantar" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Button onAction="#gorevliPaneButton" styleClass="custom-button" stylesheets="@application.css" text="Görevli" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Button onAction="#gorevliPaneButton" prefHeight="42.0" prefWidth="78.0" styleClass="custom-button" text="Depo" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Button onAction="#urunPaneButton" prefHeight="41.0" prefWidth="84.0" styleClass="custom-button" stylesheets="@application.css" text="Ürün" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button onAction="#tabloPaneButton" prefHeight="41.0" prefWidth="78.0" styleClass="custom-button" text="Tablo" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+   </right>
+   <styleClass>
+      <String fx:value="root" />
+      <String fx:value="root-pane" />
+   </styleClass>
+</BorderPane>
